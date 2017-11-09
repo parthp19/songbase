@@ -1,0 +1,13 @@
+{% extends "home-base.html" %}
+{% block title %}
+Users
+{% endblock %}
+{% block page_content %}
+    {# This is jinja comment #}
+    <h1>This is user page</h1>
+    {% if user_name == "harry"%}
+    <h1>Hello, Professor!</h1>
+    {% else %}
+    <h2>Hello, {{user_name}}</h2>
+    {% endif %}
+    {% endblock %}
