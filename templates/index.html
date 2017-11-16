@@ -1,17 +1,16 @@
 {% extends "home-base.html" %}
 
-{% block head%}
+{% block head %}
+{{super()}}
 <style>
-h1{
-  color: green;
-}
+  h1 {
+    color:green;
+  }
 </style>
 {% endblock %}
-
-
 {% block title %}
-Homepage
+  Homepage
 {% endblock %}
-{% block page_content %}
-<h1>This is index with template reuse</h1>
-{% endblock %}
+{% block page_content%}
+    <h1>This is the index page using template inheritance</h1>
+{% endblock%}
