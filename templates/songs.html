@@ -1,23 +1,23 @@
 {% extends "home-base.html" %}
-
 {% block head%}
-{{super()}}
+{{super ()}}
 <style>
-h1{
-  color: blue;
-}
+  h1 {
+    color:blue;
+  }
 </style>
 {% endblock %}
-
 {% block title %}
-Songs
+All Songs
 {% endblock %}
 {% block page_content %}
-  <h1>These are the songs:</h1>
-  <ul>
-    {% for song in songs %}
-    <li>{{song}}</li>
-    {% endfor %}
-    <img src="static/img/google.png" alt="">
-  </ul>
-  {% endblock %}
+<h1>this is the song list:</h1>
+
+<ul>
+  {% for song in songs %}
+  <li>{{song}}</li>
+  {% endfor%}
+  <img src="static/img/google.jpg" alt="">
+</ul>
+
+{% endblock %}
